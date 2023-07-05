@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+//Reset
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  a, a:hover{ text-decoration: none; }
+  li{ list-style-type: none; }
+  audio, img, iframe, video{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+//Grids
+@media( width > 48em){
+  $numero-de-colunas: 12;
+  @function largura-coluna($coluna) {
+    @return (100% / $numero-de-colunas) * $coluna;
+  }
+  @for $i from 1 through $numero-de-colunas {
+    .col-#{$i} {
+      width: largura-coluna($i);
+    }
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  @media( width > 48em){
+    flex-direction: row;
+  }
+}

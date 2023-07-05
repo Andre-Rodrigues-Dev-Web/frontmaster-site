@@ -1,0 +1,19 @@
+h2{
+  color: #fff;
+  position: relative;
+  &::after{
+    background: linear-gradient(#322b80 0%, #c4007a 100%);
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 57px;
+  }
+  @media( width > 48em){
+    font-size: 2vw;
+    &::after{
+      top: 40px;
+    }
+  }
+}

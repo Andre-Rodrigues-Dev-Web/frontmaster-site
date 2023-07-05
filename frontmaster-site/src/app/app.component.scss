@@ -1,0 +1,12 @@
+.layout{
+  background-color: #0C0B0B;
+  min-height: 100vh;
+  .content_container{
+    color: #fff;
+    margin: 0 auto;
+    width: 99%;
+    @media(width > 48em){
+      width: 1400px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<section>
+  <div *ngIf="noticia">
+    <img [src]="noticia.imagem" alt="Imagem da notícia">
+    <h2>{{ noticia.titulo }}</h2>
+    <p>{{ noticia.data }}</p>
+    <p>{{ noticia.categoria }}</p>
+    <p>{{ noticia.texto }}</p>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+.card_news{
+  border-radius: 8px;
+  background: #171616;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 1rem 0;
+  .card_header{
+    img{
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+  .card_body{
+    .content_card{
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 1rem;
+      a{
+        background: linear-gradient(#322b80 0%, #c4007a 100%);
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 1rem;
+        text-align: center;
+      }
+      span{
+        display: inline-block;
+      }
+      @media(width > 48em){
+        a{
+          max-width: 200px;
+        }
+        span{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

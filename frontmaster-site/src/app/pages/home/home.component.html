@@ -1,1 +1,19 @@
-<p>home works!</p>
+<app-header></app-header>
+<section class="cards_home">
+  <div class="row">
+    <div class="col-12">
+      <app-title [nameTitle]="'Destaques da semana'"></app-title>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4" *ngFor="let noticia of noticias">
+      <app-card-news
+        [imageCard]="noticia.imagem"
+        [titleCard]="noticia.titulo"
+        [cardCategory]="noticia.categoria"
+        [dataCard]="noticia.data"
+        [slugCard]="noticia.slug"
+      ></app-card-news>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<div class="card_news" role="article" aria-label="card de notícias">
+  <header class="card_header">
+    <img src="{{ imageCard }}" alt="{{ titleCard }}" srcset="../../../../assets/{{ imageCard }}">
+  </header>
+  <div class="card_body">
+    <div class="content_card">
+      <h3>{{ titleCard }}</h3>
+      <p>Data: <time>{{ dataCard }}</time></p>
+      <div class="category">{{ cardCategory }}</div>
+      <a href="/post/{{ slugCard }}" [routerLink]="['/post', slugCard]">Ver mais</a>
+    </div>
+  </div>
+</div>
